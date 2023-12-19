@@ -18,14 +18,24 @@ function classificarImc(imc) {
     }
 }
 
-function main() {
+// Função não nomeada imadiatamente invocada
+(function () {
     const peso = 75;
     const altura = 1.75;
     
     const imc = calcularImc(peso, altura);
     console.log(classificarImc(imc));
-}
+})();
 
-main();
+// Funçã declarada e chamada de forma clássica
+// function main() {
+//     const peso = 75;
+//     const altura = 1.75;
+    
+//     const imc = calcularImc(peso, altura);
+//     console.log(classificarImc(imc));
+// }
+
+// main();
 
 
